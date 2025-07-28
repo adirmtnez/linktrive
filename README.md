@@ -1,4 +1,4 @@
-# LinkyTrive
+# Linktrive
 
 Una aplicación web moderna construida con Next.js y shadcn/ui para gestionar y organizar enlaces.
 
