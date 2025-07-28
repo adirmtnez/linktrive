@@ -99,9 +99,12 @@ export default function Home() {
         </div>
 
         <div className="text-center mt-8">
-          <p className="text-muted-foreground">
+          <p className="text-muted-foreground mb-4">
             ¡Todo listo para comenzar a desarrollar! 🚀
           </p>
+          <Button asChild>
+            <a href="/dashboard">Ir al Dashboard</a>
+          </Button>
         </div>
       </div>
     </div>
