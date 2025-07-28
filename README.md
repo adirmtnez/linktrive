@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LinkyTrive
 
-## Getting Started
+Una aplicación web moderna construida con Next.js y shadcn/ui para gestionar y organizar enlaces.
 
-First, run the development server:
+## 🚀 Tecnologías
 
+- **[Next.js 15.4.4](https://nextjs.org)** - Framework de React con App Router
+- **[React 19.1.0](https://react.dev)** - Librería de interfaz de usuario
+- **[TypeScript](https://www.typescriptlang.org)** - Tipado estático para JavaScript
+- **[Tailwind CSS v4](https://tailwindcss.com)** - Framework de CSS utility-first
+- **[shadcn/ui](https://ui.shadcn.com)** - Componentes de UI reutilizables
+- **[Turbopack](https://turbo.build/pack)** - Bundler ultra-rápido para desarrollo
+- **[ESLint](https://eslint.org)** - Linter para mantener código limpio
+
+## 🛠️ Instalación
+
+1. Clona el repositorio:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <url-del-repositorio>
+cd linktrive
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Instala las dependencias:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Inicia el servidor de desarrollo:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
 
-## Learn More
+## 📜 Scripts Disponibles
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run dev        # Inicia el servidor de desarrollo con Turbopack
+npm run build      # Construye la aplicación para producción
+npm run start      # Inicia la aplicación en modo producción
+npm run lint       # Ejecuta ESLint para verificar el código
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎨 Componentes shadcn/ui
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Componentes instalados:
+- `Button` - Botones con múltiples variantes
+- `Card` - Tarjetas con header, content y description
+- `Input` - Campos de entrada para formularios
+- `Label` - Etiquetas para elementos de formulario
 
-## Deploy on Vercel
+Para agregar más componentes:
+```bash
+npx shadcn@latest add [component-name]
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📁 Estructura del Proyecto
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+linktrive/
+├── src/
+│   ├── app/                 # App Router de Next.js
+│   │   ├── globals.css      # Estilos globales con Tailwind
+│   │   ├── layout.tsx       # Layout principal
+│   │   └── page.tsx         # Página de inicio
+│   ├── components/
+│   │   └── ui/              # Componentes de shadcn/ui
+│   └── lib/
+│       └── utils.ts         # Utilidades (clsx + tailwind-merge)
+├── public/                  # Archivos estáticos
+├── components.json          # Configuración de shadcn/ui
+└── ...
+```
+
+## 🔧 Configuración
+
+- **shadcn/ui**: Estilo New York, color base neutral, CSS variables habilitadas
+- **TypeScript**: Configuración estricta
+- **Tailwind CSS**: v4 con PostCSS
+- **Import Aliases**: `@/*` apunta a `src/*`
+
+## 🚀 Deployment
+
+La forma más fácil de desplegar es usando [Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme):
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme)
+
+## 📚 Recursos
+
+- [Next.js Documentation](https://nextjs.org/docs)
+- [shadcn/ui Documentation](https://ui.shadcn.com)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+- [TypeScript Documentation](https://www.typescriptlang.org/docs)
